@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "bun bundle/index.js",
+    "build": "rm -rf bundle && rollup -c"
+  },
+  "name": "ssr",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/preset-env": "^7.24.0",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "preact": "^10.19.6",
+    "preact-render-to-string": "^6.4.0"
+  }
+}
